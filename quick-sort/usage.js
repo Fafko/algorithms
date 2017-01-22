@@ -21,11 +21,11 @@ const comparingObjFunctionDESC = (a, b) =>
 
 
 // Examples
-console.log(`source: ${exampleNumber}' \nresult: ${quickSort(exampleNumber, comparingFunctionASC)}`);
-console.log(`source: ${exampleNumber}' \nresult: ${quickSort(exampleNumber, comparingFunctionDESC)}`);
+console.log(`source: ${exampleNumber} \nresult: ${quickSort(exampleNumber, comparingFunctionASC)}`);
+console.log(`source: ${exampleNumber} \nresult: ${quickSort(exampleNumber, comparingFunctionDESC)}`);
 console.log(new Array(50).join(' - '));
-console.log(`source: ${exampleString}' \nresult: ${quickSort(exampleString, comparingFunctionASC)}`);
-console.log(`source: ${exampleString}' \nresult: ${quickSort(exampleString, comparingFunctionDESC)}`);
+console.log(`source: ${exampleString} \nresult: ${quickSort(exampleString, comparingFunctionASC)}`);
+console.log(`source: ${exampleString} \nresult: ${quickSort(exampleString, comparingFunctionDESC)}`);
 console.log(new Array(50).join(' - '));
-console.log(`source: ${util.inspect(exampleObject, false, null)}' \nresult: ${util.inspect(quickSort(exampleObject, comparingObjFunctionASC), false, null)}`);
-console.log(`source: ${util.inspect(exampleObject, false, null)}' \nresult: ${util.inspect(quickSort(exampleObject, comparingObjFunctionDESC), false, null)}`);
+console.log(`source: ${util.inspect(exampleObject, false, null)} \nresult: ${util.inspect(quickSort(exampleObject, comparingObjFunctionASC), false, null)}`);
+console.log(`source: ${util.inspect(exampleObject, false, null)} \nresult: ${util.inspect(quickSort(exampleObject, comparingObjFunctionDESC), false, null)}`);

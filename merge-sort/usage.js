@@ -21,11 +21,11 @@ const comparingObjFunctionDESC = (a, b) =>
 
 
 // Examples
-console.log(`source: ${exampleNumber}' \nresult: ${mergeSort(exampleNumber, comparingFunctionASC)}`);
-console.log(`source: ${exampleNumber}' \nresult: ${mergeSort(exampleNumber, comparingFunctionDESC)}`);
+console.log(`source: ${exampleNumber} \nresult: ${mergeSort(exampleNumber, comparingFunctionASC)}`);
+console.log(`source: ${exampleNumber} \nresult: ${mergeSort(exampleNumber, comparingFunctionDESC)}`);
 console.log(new Array(50).join(' - '));
-console.log(`source: ${exampleString}' \nresult: ${mergeSort(exampleString, comparingFunctionASC)}`);
-console.log(`source: ${exampleString}' \nresult: ${mergeSort(exampleString, comparingFunctionDESC)}`);
+console.log(`source: ${exampleString} \nresult: ${mergeSort(exampleString, comparingFunctionASC)}`);
+console.log(`source: ${exampleString} \nresult: ${mergeSort(exampleString, comparingFunctionDESC)}`);
 console.log(new Array(50).join(' - '));
-console.log(`source: ${util.inspect(exampleObject, false, null)}' \nresult: ${util.inspect(mergeSort(exampleObject, comparingObjFunctionASC), false, null)}`);
-console.log(`source: ${util.inspect(exampleObject, false, null)}' \nresult: ${util.inspect(mergeSort(exampleObject, comparingObjFunctionDESC), false, null)}`);
+console.log(`source: ${util.inspect(exampleObject, false, null)} \nresult: ${util.inspect(mergeSort(exampleObject, comparingObjFunctionASC), false, null)}`);
+console.log(`source: ${util.inspect(exampleObject, false, null)} \nresult: ${util.inspect(mergeSort(exampleObject, comparingObjFunctionDESC), false, null)}`);
