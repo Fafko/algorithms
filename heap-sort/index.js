@@ -9,7 +9,7 @@ const sort = (values, comparingFunction) => {
   
   buildHeap(values, heapSize, comparingFunction);
   
-  while (heapSize > 0) {
+  while (heapSize >= 0) {
     
     swap(values, heapSize, 0);
     heapSize -= 1;
@@ -36,7 +36,7 @@ const buildHeap = (values, heapSize, comparingFunction) => {
 
 const siftDown = (values, index, heapSize, comparingFunction) => {
   
-  while (2 * index + 1 < heapSize) {
+  while (2 * index + 1 <= heapSize) {
     
     let leftChildIndex = 2 * index + 1;
     let rightChildIndex = 2 * index + 2;
@@ -45,7 +45,7 @@ const siftDown = (values, index, heapSize, comparingFunction) => {
     if (comparingFunction(values[greatestIndex], values[leftChildIndex]) < 0) 
       greatestIndex = leftChildIndex;
   
-    if (rightChildIndex < heapSize && comparingFunction(values[greatestIndex], values[rightChildIndex]) < 0) 
+    if (rightChildIndex <= heapSize && comparingFunction(values[greatestIndex], values[rightChildIndex]) < 0) 
       greatestIndex = rightChildIndex;
   
     if (index === greatestIndex) {
