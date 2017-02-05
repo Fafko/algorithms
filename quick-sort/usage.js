@@ -1,6 +1,6 @@
 'use strict';
 
-const util = require('util'); // for render js objects in console
+const util = require('util'); // correct js objects output in console
 const quickSort = require('./index');
 
 const exampleNumber = [6, 3, 0, 7, -1, 5, 7, 2, 4, 1, 9, 8, 4];
