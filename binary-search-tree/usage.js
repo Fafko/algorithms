@@ -13,9 +13,8 @@ bst
   .add(4, 'four').add(7, 'seven')
   .add(6, 'six').add(8, 'eight');
 
-console.log(bst.getSize());
+bst.remove(4);
 console.log(bst.get(1));
-console.log(bst.remove(4).getSize());
 
 console.log('\n');
 bst.preOrderTraversal(traversalFunction);
